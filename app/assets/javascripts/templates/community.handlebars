@@ -1,0 +1,17 @@
+<h1>Ember Community</h1>
+<p>
+    Get in touch with the community
+</p>
+<p>Featured contact info:</p>
+{{#each item in content}}
+    <a {{bindAttr href="item.linkUrl" }} target="_blank">
+        <img height="32" width="32" {{bindAttr src="item.imageUrl" title="item.displayName" alt="item.displayName"}} /><br />
+        {{item.displayName}}
+    </a><br />
+{{/each}}
+<br />
+Check more information about ember community at <a href="http://emberjs.com/community/" target="_blank">emberjs.com</a>
+<br />
+<br />
+<strong>Note</strong>: This is a template with a <i>foreach</i> type of loop
+
